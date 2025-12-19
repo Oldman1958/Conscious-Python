@@ -52,18 +52,18 @@ def buy():
 
 
 def buy():
-    # Ваша логика проверки баланса
     def check_balance():
+        """проверка баланса"""
         return True if balance >= price else False
 
-    # Ваша логика изменения баланса
     def change_balance():
+        """изменение баланса"""
         global balance, price
         balance -= price
         return balance
 
-    # Ваша логика отображения баланса
     def show_balance():
+        """отображение баланса"""
         print(f"Ваш баланс: {balance}")
 
     if check_balance():

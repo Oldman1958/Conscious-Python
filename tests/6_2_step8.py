@@ -39,8 +39,6 @@ persons = [
     {'name': 'Борян', 'rating': 4.5}
 ]
 
-filter_persons = list(filter(lambda x: x['rating'] >= 4.5, persons))
-sorted_persons = sorted(filter_persons, key=lambda dct: dct['name'])
+sorted_persons = sorted((list(filter(lambda x: x['rating'] >= 4.5, persons))), key=lambda dct: dct['name'])
 
-for i in sorted_persons:
-    print(i['name'], end='\n')
+print('\n'.join(i['name'] for i in sorted_persons))

@@ -42,6 +42,21 @@ change_balance(int(input()))  # Недостаточно средств!
 
 
 # Определите декоратор balance_decorator:
+def balance_decorator(func):
+    def wrapper(num):
+        #global balance
+        if num > 0:
+            func(num)
+            print("Баланс пополнен!")
+        elif num < 0:
+            if balance + num >= 0:
+                func(num)
+                print("Покупка совершена!")
+            elif balance + num < 0:
+                print("Недостаточно средств!")
+        return func
+
+    return wrapper
 
 
 # Код ниже, пожалуйста не меняйте:

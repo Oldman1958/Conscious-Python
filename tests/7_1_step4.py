@@ -24,3 +24,22 @@ for i in range(number):
 Ваша программа должна учитывать это.
 Ваша задача только создать функцию-генератор и генератор с именем gen.
 """
+
+
+# Ваш код ниже:
+# Создайте функцию-генератор:
+
+def num_generator(num):
+    current = num * 2
+    while True:
+        yield current
+        current *= 2
+
+
+# Приняли число от пользователя:
+number = int(input())
+# Создайте генератор gen:
+gen = num_generator(number)
+# Код ниже не удаляйте:
+for i in range(number):
+    print(next(gen))

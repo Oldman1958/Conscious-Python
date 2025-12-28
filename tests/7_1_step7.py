@@ -66,5 +66,10 @@ computer_products = {
     "Мышь Razer DeathAdder V2": 5000
 }
 
+"""
+Решение строго по заданию
 gen = (k for k, v in computer_products.items() if 20000 >= v >= 15000)
 print(*gen, sep='\n')
+"""
+# Однострочное решение
+print(*(k for k, v in computer_products.items() if 20000 >= v >= 15000), sep='\n')

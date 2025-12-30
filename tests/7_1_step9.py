@@ -24,5 +24,4 @@
 
 str_input = input().split()
 q_simbols = int(input())
-res = [word for word in str_input if len(word) == q_simbols]
-print(res)
+print([word for word in str_input if len(word) == q_simbols])

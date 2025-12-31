@@ -23,6 +23,4 @@
 Задание изменено 28.12.2024
 """
 
-workers = input().split()
-workers_dict = {worker: "Супер-Стажер" if worker[0] == "В" else "Стажер" for worker in workers}
-print(workers_dict)
+print({worker: "Супер-Стажер" if worker[0] == "В" else "Стажер" for worker in input().split()})

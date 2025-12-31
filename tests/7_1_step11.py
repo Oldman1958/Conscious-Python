@@ -20,8 +20,8 @@ color = 'чёрный'
 """
 
 product = {'Samsung': 'чёрный', 'Asus': 'красный', 'Sony': 'чёрный'}
+
+
 color = 'чёрный'
 
-result = [k for k, v in product.items() if v == 'чёрный']
-
-print(result)
+print([k for k, v in product.items() if v == color])

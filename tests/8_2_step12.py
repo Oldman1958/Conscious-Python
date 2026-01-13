@@ -31,5 +31,6 @@ person = {
 
 person1 = deepcopy(person)
 
+print(person1)
 print(id(person))
 print(id(person1))

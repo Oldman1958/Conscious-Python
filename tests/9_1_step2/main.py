@@ -14,7 +14,19 @@
 Запустите программу, если ошибок не произошло, значит вы всё сделали правильно.
 """
 
-my_file = open('/home/oldman_mint_ssd/PycharmProjects/Conscious python/text1.txt')
+# Открытие файла с указанием абсолютного пути
+# Файл text1.txt скопирован в корень проекта /home/oldman_mint_ssd/PycharmProjects/Conscious python/
+# и запускается из модуля main, установленного в каталоге 9_1_step2.
+# my_file = open('/home/oldman_mint_ssd/PycharmProjects/Conscious python/text1.txt')
+
+
+# Открытие файла с указанием относительного пути
+# Файл text1.txt скопирован в корень проекта /home/oldman_mint_ssd/PycharmProjects/Conscious python/tests/9_1_step2
+# и запускается из модуля main, установленного там же.
+
+
+my_file = open('text1.txt')
 # Вывод на печать содержимого файла
 print(my_file.read())
+# Закрываем файл
 my_file.close()

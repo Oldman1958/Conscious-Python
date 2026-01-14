@@ -17,3 +17,4 @@
 my_file = open('/home/oldman_mint_ssd/PycharmProjects/Conscious python/text1.txt')
 # Вывод на печать содержимого файла
 print(my_file.read())
+my_file.close()
